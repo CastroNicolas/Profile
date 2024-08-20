@@ -13,22 +13,22 @@ const projects = [
         github: "https://github.com/PetPalacePF/petpalace",
         deploy: "https://petpalace-lilac.vercel.app/"
     },
-    {
-        id: 2,
-        name: "Rick And Morty App",
-        technologies: "Vite.js, Node, Express, SQL, Taildwind",
-        image: RyM,
-        github: "https://github.com/CastroNicolas/Heroes-App",
-        deploy: "https://castronicolas.github.io/marvel"
-    },
-    {
-        id: 3,
-        name: "Calendary",
-        technologies: "MERN, CSS",
-        image: HeroesApp,
-        github: "https://github.com/CastroNicolas/Heroes-App",
-        deploy: "https://castronicolas.github.io/marvel"
-    },
+    // {
+    //     id: 2,
+    //     name: "Rick And Morty App",
+    //     technologies: "Vite.js, Node, Express, SQL, Taildwind",
+    //     image: RyM,
+    //     github: "https://github.com/CastroNicolas/Heroes-App",
+    //     deploy: "https://castronicolas.github.io/marvel"
+    // },
+    // {
+    //     id: 3,
+    //     name: "Calendary",
+    //     technologies: "MERN, CSS",
+    //     image: HeroesApp,
+    //     github: "https://github.com/CastroNicolas/Heroes-App",
+    //     deploy: "https://castronicolas.github.io/marvel"
+    // },
 
     {
         id: 4,
@@ -36,7 +36,7 @@ const projects = [
         technologies: "React.js, Bootstrap CSS",
         image: HeroesApp,
         github: "https://github.com/CastroNicolas/Heroes-App",
-        deploy: "https://castronicolas.github.io/marvel"
+        deploy: "https://castronicolas.github.io/Heroes-App/"
     },
 
     {

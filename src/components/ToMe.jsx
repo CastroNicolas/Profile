@@ -77,7 +77,7 @@ export const ToMe = () => {
                     Contact Me
                 </a>
                 <a href={NicolasCastro} className="bg-gradient-to-r from-gray-400 to-gray-600 text-white transform transition-transform duration-300 hover:scale-105 px-6 py-2 rounded-full">
-                    Resume
+                    Resumé
                 </a>
             </motion.div>
         </div>

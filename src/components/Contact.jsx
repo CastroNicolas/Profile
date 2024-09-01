@@ -83,7 +83,7 @@ export const Contact = () => {
     const isInView = useInView(ref, { threshold: 0.3 });
 
     return (
-        <div className="bg-black text-white py-20" id="contact">
+        <div className="bg-black text-white text-center py-16 px-4 sm:px-8 lg:px-16" id="contact">
             <div className="container mx-auto px-8 md:px-16 lg:px-24">
                 <motion.h2
                     className="text-4xl font-bold text-center mb-12"

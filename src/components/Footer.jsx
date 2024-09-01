@@ -8,7 +8,7 @@ export const Footer = () => {
     const isInView = useInView(ref, { threshold: 0.3 });
 
     return (
-        <footer className="bg-black text-white py-8">
+        <footer className="bg-black text-white text-center py-16 px-4 sm:px-8 lg:px-16">
             <div className="container mx-auto px-8 md:px-16 lg:px-24">
                 <motion.div
                     className="flex flex-col md:flex-row md:space-x-12 items-center mb-4"

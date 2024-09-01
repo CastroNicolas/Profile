@@ -20,7 +20,7 @@ const iconVariant = (duration) => ({
 })
 export const Technologies = () => {
     return (
-        <div className="bg-black text-white py-20" id="technologies">
+        <div className="bg-black text-white text-center py-16 px-4 sm:px-8 lg:px-16" id="technologies">
             <div className="container mx-auto px-8 md:px-16 lg:px-24">
                 <h2 className="text-4xl font-bold text-center mb-12">Technologies</h2>
 

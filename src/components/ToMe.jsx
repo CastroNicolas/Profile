@@ -1,7 +1,7 @@
 import { AiFillSlackCircle, AiOutlineWhatsApp } from 'react-icons/ai';
 import ProfilePicture from '../assets/ProfilePicture.jpeg';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
-import NicolasCastro from '../assets/NicolasCastro.pdf';
+import NicolásCastro from '../assets/NicolásCastro.pdf';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
@@ -76,7 +76,7 @@ export const ToMe = () => {
                 <a href='#contact' className="bg-gradient-to-r from-gray-400 to-gray-600 text-white transform transition-transform duration-300 hover:scale-105 px-6 py-2 rounded-full">
                     Contact Me
                 </a>
-                <a href={NicolasCastro} className="bg-gradient-to-r from-gray-400 to-gray-600 text-white transform transition-transform duration-300 hover:scale-105 px-6 py-2 rounded-full">
+                <a href={NicolásCastro} className="bg-gradient-to-r from-gray-400 to-gray-600 text-white transform transition-transform duration-300 hover:scale-105 px-6 py-2 rounded-full">
                     Resumé
                 </a>
             </motion.div>

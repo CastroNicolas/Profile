@@ -4,11 +4,13 @@ const services = [
         id: 1,
         title: "Frontend Developer",
         description: "Maintenance, design, and construction of new functionalities. I developed an app using the technologies of react, redux and the bootstrap framework",
+        Maintechnologies: "Javascript, React.js, Redux, Boostrap"
     },
     {
         id: 2,
         title: "Full Stack Teacher Assistant at Henry Bootcamp  ",
-        description: "Coordinating a group of students to achieve seamless integration into the study team",
+        description: "Coordinating a group of students to achieve seamless integration into the study team. Assisting in the resolution of exercises, explaining topics not understood from the previous day, and promoting group programming(pair programming). Advocating for ideas to enhance Bootcamp processes",
+        Maintechnologies: "Javascript, Typescript, React.js, Node.js, SQL, and MongoDB"
     },
 ];
 export const Service = () => {
@@ -34,7 +36,7 @@ export const Service = () => {
                                 {service.title}
                             </h3>
                             <p className="mt-2 text-gray-300">{service.description}</p>
-                            <a href="#" className="mt-4 inline-block text-green-400 hover:text-blue-500">Read More</a>
+                            <p className="mt-2 text-gray-300">Main technologies: {service.Maintechnologies}</p>
                         </div>
                     ))}
                 </div>

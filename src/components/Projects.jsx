@@ -4,7 +4,7 @@ import HeroesApp from '../assets/HeroesApp.png';
 import CountriesApp from '../assets/CountriesApp.png';
 import PetPalace from '../assets/PetPalace.jpeg';
 import Calendary from '../assets/Calendary.png'
-
+import RyM from '../assets/RyM.png'
 const projects = [
     {
         id: 1,
@@ -39,7 +39,7 @@ const projects = [
         deploy: ""
     },
     {
-        id: 7,
+        id: 6,
         name: "Gif App",
         technologies: "React.js, Bootstrap, CSS",
         image: GifApp,
@@ -47,13 +47,22 @@ const projects = [
         deploy: "https://castronicolas.github.io/react-GifApp/"
     },
     {
-        id: 6,
+        id: 7,
         name: "To Do App",
         technologies: "React.js, Bootstrap, CSS",
         image: ToDoApp,
         github: "https://github.com/CastroNicolas/react-tarea-app",
         deploy: "https://castronicolas.github.io/react-tarea-app/"
     },
+    {
+        id: 8,
+        name: "Rick and Morty App(Backend En Manteniemiento)",
+        technologies: "React.js, Node.js, Express, SQL, CSS",
+        image: RyM,
+        github: "https://github.com/CastroNicolas/RickAndMortyApp",
+        deploy: "https://rick-and-morty-ph003hv66-nicolas-castros-projects.vercel.app/"
+    },
+
 
 ];
 

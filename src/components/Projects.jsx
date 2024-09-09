@@ -56,7 +56,7 @@ const projects = [
     },
     {
         id: 8,
-        name: "Rick and Morty App(Backend En Manteniemiento)",
+        name: "Rick and Morty App(Backend Under Maintenance)",
         technologies: "React.js, Node.js, Express, SQL, CSS",
         image: RyM,
         github: "https://github.com/CastroNicolas/RickAndMortyApp",

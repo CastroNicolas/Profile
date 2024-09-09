@@ -1,7 +1,7 @@
 import { AiFillSlackCircle, AiOutlineWhatsApp } from 'react-icons/ai';
 import ProfilePicture from '../assets/ProfilePicture.jpeg';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
-import NicolásCastro from '../assets/NicolásCastro.pdf';
+import NicolásCastro from '../assets/NicolasCastro.pdf';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 

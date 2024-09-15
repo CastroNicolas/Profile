@@ -108,13 +108,13 @@ export const Contact = () => {
                         <div className="mt-8 space-y-4">
                             <div className="flex items-center">
                                 <FaEnvelope className="text-green-400 mr-2" />
-                                <a href="mailto:maximonicolascastro@gmail.com" className="hover:underline">
+                                <a target="_blank" rel="noopener noreferrer" href="mailto:maximonicolascastro@gmail.com" className="hover:underline">
                                     maximonicolascastro@gmail.com
                                 </a>
                             </div>
                             <div className="flex items-center">
                                 <AiOutlineWhatsApp className="text-green-400 mr-2" />
-                                <a href="https://wa.me/+34682044125" className="hover:underline">
+                                <a target="_blank" rel="noopener noreferrer" href="https://wa.me/+34682044125" className="hover:underline">
                                     +34 682044125
                                 </a>
                             </div>

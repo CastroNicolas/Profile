@@ -1,0 +1,39 @@
+.scroll-indicator.down {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.down-arrow {
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+  color: #f7f7f7;
+  cursor: pointer;
+}
+
+/* Flecha de subir */
+.scroll-indicator.up {
+  position: fixed;
+  top: 20px;
+  right: 50%; /* Parte derecha de la pantalla */
+  z-index: 1000;
+}
+
+.up-arrow {
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+  color: #f7f7f7;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}

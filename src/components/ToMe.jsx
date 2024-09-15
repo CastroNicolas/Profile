@@ -7,13 +7,13 @@ import { useRef } from 'react';
 
 export const ToMe = () => {
     const ref = useRef(null);
-    const isInView = useInView(ref, { threshold: 0.5 }); // Se activa al 50% de visibilidad
+    const isInView = useInView(ref, { threshold: 0.5 });
 
     return (
         <div
             className='bg-black text-white text-center py-16 px-4 sm:px-8 lg:px-16'
             id='home'
-            ref={ref} // Ref en el contenedor para detectar cuando está en vista
+            ref={ref}
         >
             <motion.img
                 src={ProfilePicture}
@@ -50,19 +50,19 @@ export const ToMe = () => {
                     animate={isInView ? { opacity: 1 } : { opacity: 0 }}
                     transition={{ delay: 0.3, duration: 0.8 }}
                 >
-                    <a href="https://wa.me/+34682044125" className="text-gray-400 hover:text-white">
+                    <a target="_blank" rel="noopener noreferrer" href="https://wa.me/+34682044125" className="text-gray-400 hover:text-white">
                         <AiOutlineWhatsApp size={24} />
                     </a>
-                    <a href="mailto:maximonicolascastro@gmail.com" className="text-gray-400 hover:text-white">
+                    <a target="_blank" rel="noopener noreferrer" href="mailto:maximonicolascastro@gmail.com" className="text-gray-400 hover:text-white">
                         <FaEnvelope size={24} />
                     </a>
-                    <a href="https://www.linkedin.com/in/maximonicolascastrorodriguez/" className="text-gray-400 hover:text-white">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/maximonicolascastrorodriguez/" className="text-gray-400 hover:text-white">
                         <FaLinkedin size={24} />
                     </a>
-                    <a href="https://github.com/CastroNicolas" className="text-gray-400 hover:text-white">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/CastroNicolas" className="text-gray-400 hover:text-white">
                         <FaGithub size={24} />
                     </a>
-                    <a href="https://soyhenry.slack.com/team/U068CMRV59C" className="text-gray-400 hover:text-white">
+                    <a target="_blank" href="https://soyhenry.slack.com/team/U068CMRV59C" className="text-gray-400 hover:text-white">
                         <AiFillSlackCircle size={24} />
                     </a>
                 </motion.div>
@@ -76,10 +76,10 @@ export const ToMe = () => {
                 <a href='#contact' className="bg-gradient-to-r from-gray-400 to-gray-600 text-white transform transition-transform duration-300 hover:scale-105 px-6 py-2 rounded-full">
                     Contact Me
                 </a>
-                <a href={NicolásCastro} className="bg-gradient-to-r from-gray-400 to-gray-600 text-white transform transition-transform duration-300 hover:scale-105 px-6 py-2 rounded-full">
+                <a href={NicolásCastro} target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-gray-400 to-gray-600 text-white transform transition-transform duration-300 hover:scale-105 px-6 py-2 rounded-full">
                     Resumé
                 </a>
             </motion.div>
-        </div>
+        </div >
     );
 };

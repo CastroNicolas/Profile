@@ -83,7 +83,7 @@ export const Contact = () => {
     const isInView = useInView(ref, { threshold: 0.3 });
 
     return (
-        <div className="bg-black text-white text-center py-16 px-4 sm:px-8 lg:px-16" id="contact">
+        <div className="text-white text-center py-16 px-4 sm:px-8 lg:px-16" id="contact">
             <div className="container mx-auto px-8 md:px-16 lg:px-24">
                 <motion.h2
                     className="text-4xl font-bold text-center mb-12"
@@ -118,10 +118,10 @@ export const Contact = () => {
                                     +34 682044125
                                 </a>
                             </div>
-                            <div className="flex items-center">
+                            {/* <div className="flex items-center">
                                 <FaMapMarkedAlt className="text-green-400 mr-2" />
                                 <span>Calle San Rafael, Leon, Spain</span>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div className="flex-1 w-full">

@@ -72,45 +72,47 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <div className='bg-black'>
+        <Navbar />
 
-      <div ref={toMeRef}>
-        <ToMe />
-      </div>
-
-      <div ref={aboutMeRef}>
-        <AboutMe />
-      </div>
-
-      <div ref={technologiesRef}>
-        <Technologies />
-      </div>
-
-      <div ref={serviceRef}>
-        <Service />
-      </div>
-
-      <div ref={projectsRef}>
-        <Projects />
-      </div>
-
-      <div ref={contactRef}>
-        <Contact />
-      </div>
-
-      <Footer />
-
-      {showUpArrow && (
-        <div className="scroll-indicator up">
-          <FaChevronUp className="up-arrow" onClick={scrollToPrevious} />
+        <div ref={toMeRef} className='text-white text-center py-16 px-4 sm:px-8 lg:px-16'>
+          <ToMe />
         </div>
-      )}
 
-      {showDownArrow && (
-        <div className="scroll-indicator down">
-          <FaChevronDown className="down-arrow" onClick={scrollToNext} />
+        <div ref={aboutMeRef} className='text-white text-center py-16 px-4 sm:px-8 lg:px-16'>
+          <AboutMe />
         </div>
-      )}
+
+        <div ref={technologiesRef} className='text-white text-center py-16 px-4 sm:px-8 lg:px-16'>
+          <Technologies />
+        </div>
+
+        <div ref={serviceRef} className='text-white text-center py-16 px-4 sm:px-8 lg:px-16'>
+          <Service />
+        </div>
+
+        <div ref={projectsRef} className='text-white text-center py-16 px-4 sm:px-8 lg:px-16'>
+          <Projects />
+        </div>
+
+        <div ref={contactRef} className='text-white text-center py-16 px-4 sm:px-8 lg:px-16'>
+          <Contact />
+        </div>
+
+        <Footer />
+
+        {showUpArrow && (
+          <div className="scroll-indicator up mx-auto">
+            <FaChevronUp className="up-arrow " onClick={scrollToPrevious} />
+          </div>
+        )}
+
+        {showDownArrow && (
+          <div className="scroll-indicator down mx-auto">
+            <FaChevronDown className="down-arrow" onClick={scrollToNext} />
+          </div>
+        )}
+      </div>
     </>
   );
 }

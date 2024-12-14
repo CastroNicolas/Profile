@@ -20,7 +20,7 @@ export const Footer = () => {
                     <div className="flex-1 mb-4 md:mb-0">
                         <h3 className="text-2xl font-bold mb-2">Nicolás Castro</h3>
                         <p className="text-gray-400">
-                            Full-Stack Developer based in Spain, specializing in web and
+                            Full-Stack Developer, specializing in web and
                             software development.
                         </p>
                     </div>

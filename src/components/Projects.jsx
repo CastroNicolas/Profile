@@ -62,7 +62,7 @@ const projects = [
         image: RyM,
         github: "https://github.com/CastroNicolas/RickAndMortyApp",
         deploy:
-            "https://rick-and-morty-ph003hv66-nicolas-castros-projects.vercel.app/",
+            "https://rick-and-morty-app-chi-nine.vercel.app/",
     },
 ];
 

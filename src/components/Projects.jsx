@@ -6,65 +6,20 @@ import PetPalace from "../assets/PetPalace.jpeg";
 import Calendary from "../assets/Calendary.png";
 import RyM from "../assets/RyM.png";
 
-const projects = [
-    {
-        id: 1,
-        name: "Pet Palace",
-        technologies: "Vite.js, Node, Express, SQL, Tailwind",
-        image: PetPalace,
-        github: "https://github.com/PetPalacePF/petpalace",
-        deploy: "https://petpalace-lilac.vercel.app/",
-    },
-    {
-        id: 3,
-        name: "Calendary",
-        technologies: "MERN, SASS",
-        image: Calendary,
-        github: "https://github.com/CastroNicolas/calendar-app",
-        deploy: "https://castronicolas.github.io/calendar-app/",
-    },
-    {
-        id: 4,
-        name: "Heroes App",
-        technologies: "React.js, Bootstrap CSS",
-        image: HeroesApp,
-        github: "https://github.com/CastroNicolas/Heroes-App",
-        deploy: "https://castronicolas.github.io/Heroes-App/",
-    },
-    {
-        id: 5,
-        name: "Countries App",
-        technologies: "Vite.js, Node, Express, SQL, Tailwind",
-        image: CountriesApp,
-        github: "https://github.com/CastroNicolas/CountriesApp",
-        deploy: "",
-    },
-    {
-        id: 6,
-        name: "Gif App",
-        technologies: "React.js, Bootstrap, CSS",
-        image: GifApp,
-        github: "https://github.com/CastroNicolas/react-GifApp",
-        deploy: "https://castronicolas.github.io/react-GifApp/",
-    },
-    {
-        id: 7,
-        name: "To Do App",
-        technologies: "React.js, Bootstrap, CSS",
-        image: ToDoApp,
-        github: "https://github.com/CastroNicolas/react-tarea-app",
-        deploy: "https://castronicolas.github.io/react-tarea-app/",
-    },
-    {
-        id: 8,
-        name: "Rick and Morty App (Backend Under Maintenance)",
-        technologies: "React.js, Node.js, Express, SQL, CSS",
-        image: RyM,
-        github: "https://github.com/CastroNicolas/RickAndMortyApp",
-        deploy:
-            "https://rick-and-morty-app-chi-nine.vercel.app/",
-    },
-];
+import projectsData from "./projects.json"
+
+const projects = projectsData.projects.map((project) => ({
+    ...project,
+    image:
+        project.image === "PetPalace" ? PetPalace :
+            project.image === "Calendary" ? Calendary :
+                project.image === "HeroesApp" ? HeroesApp :
+                    project.image === "CountriesApp" ? CountriesApp :
+                        project.image === "GifApp" ? GifApp :
+                            project.image === "ToDoApp" ? ToDoApp :
+                                project.image === "RyM" ? RyM :
+                                    null, // En caso de que no haya coincidencia
+}));
 
 export const Projects = () => {
     return (

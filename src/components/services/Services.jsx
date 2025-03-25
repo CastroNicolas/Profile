@@ -56,7 +56,7 @@ export const Service = () => {
                             whileHover={{ scale: 1.05 }}
                         >
                             <div
-                                className="text-right text-2xl font-bold text-transparent bg-clip-text text-gray-100"
+                                className="text-right text-2xl font-bold text-gray-100"
                             >
                                 {service.date}
                             </div>

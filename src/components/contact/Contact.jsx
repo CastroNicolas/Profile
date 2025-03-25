@@ -1,11 +1,27 @@
 import { AiOutlineWhatsApp } from "react-icons/ai";
-import { FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import { motion, useInView } from "framer-motion";
 
+const variants = {
+    initial: {
+        y: 500,
+        opacity: 0,
+    },
+    animate: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            duration: 0.5,
+            staggerChildren: 0.1,
+        },
+    },
+};
+
 export const Contact = () => {
+
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -79,20 +95,16 @@ export const Contact = () => {
     };
 
     // Referencias y animación
-    const ref = useRef(null);
-    const isInView = useInView(ref, { threshold: 0.3 });
+    const ref = useRef();
+    const isInView = useInView(ref, { margin: "-100px" });
+
 
     return (
-        <div className="text-white text-center py-16 px-4 sm:px-8 lg:px-16" id="contact">
+        <motion.div className="text-white text-center py-16 px-4 sm:px-8 lg:px-16" id="contact" ref={ref} variants={variants}
+            initial="initial"
+            whileInView="animate">
             <div className="container mx-auto px-8 md:px-16 lg:px-24">
-                <motion.h2
-                    className="text-4xl font-bold text-center mb-12"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 20 }}
-                    transition={{ duration: 0.8 }}
-                >
-                    Contact Me
-                </motion.h2>
+
                 <motion.div
                     className="flex flex-col md:flex-row items-center md:space-x-12"
                     initial={{ opacity: 0, y: 20 }}
@@ -102,7 +114,7 @@ export const Contact = () => {
                 >
                     <div className="flex-1 mb-8 md:mb-0">
                         <h3 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 mb-4">
-                            Let's Talk
+                            Let's work together
                         </h3>
                         <p>I'm open to discussing web development projects or partnership opportunities.</p>
                         <div className="mt-8 space-y-4">
@@ -159,6 +171,7 @@ export const Contact = () => {
                                     placeholder="Enter Your Message"
                                 />
                             </div>
+                            {/* <span>Sent me a message and I'll get back to you as soon as possible</span> */}
                             <button className="bg-gradient-to-r from-green-400 to-blue-500 text-white transform transition-transform duration-300 hover:scale-105 px-8 py-2 rounded-full">
                                 Send
                             </button>
@@ -166,6 +179,6 @@ export const Contact = () => {
                     </div>
                 </motion.div>
             </div>
-        </div>
+        </motion.div>
     );
 };

@@ -20,17 +20,18 @@ const iconVariant = (duration) => ({
 })
 export const Technologies = () => {
     return (
-        <div className="text-white text-center py-16 px-4 sm:px-8 lg:px-16" id="technologies">
+        <div className="text-white text-center py-16 px-4 sm:px-8 lg:px-16">
             <div className="container mx-auto px-8 md:px-16 lg:px-24">
-                <h2 className="text-4xl font-bold text-center mb-12">Technologies</h2>
+                <h2 className="text-3xl font-bold text-center mb-12">Technologies</h2>
 
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center justify-items-center">
+                <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center justify-items-center">
                     <motion.div
                         variants={iconVariant(2.5)}
                         initial="initial"
                         animate="animate"
                         className="rounded-2xl border-4 border-neutral-800 p-4">
                         <DiReact className="text-7xl text-cyan-400 " />
+                        <h1>React.js</h1>
                     </motion.div>
                     <motion.div
                         variants={iconVariant(3)}
@@ -38,6 +39,7 @@ export const Technologies = () => {
                         animate="animate"
                         className="rounded-2xl border-4 border-neutral-800 p-4">
                         <SiVite className="text-7xl text-violet-400 " />
+                        <h1>Vite.js</h1>
                     </motion.div>
                     <motion.div
                         variants={iconVariant(5)}
@@ -45,6 +47,7 @@ export const Technologies = () => {
                         animate="animate"
                         className="rounded-2xl border-4 border-neutral-800 p-4">
                         <SiMongodb className="text-7xl text-green-500" />
+                        <h1>MongoDB</h1>
                     </motion.div>
                     <motion.div
                         variants={iconVariant(6)}
@@ -52,6 +55,7 @@ export const Technologies = () => {
                         animate="animate"
                         className="rounded-2xl border-4 border-neutral-800 p-4">
                         <FaNodeJs className="text-7xl text-green-400 " />
+                        <h1>Node.js</h1>
                     </motion.div>
                     <motion.div
                         variants={iconVariant(4)}
@@ -59,6 +63,7 @@ export const Technologies = () => {
                         animate="animate"
                         className="rounded-2xl border-4 border-neutral-800 p-4">
                         <RiJavascriptFill className="text-7xl text-yellow-400 " />
+                        <h1>JavaScript</h1>
                     </motion.div>
                     <motion.div
                         variants={iconVariant(5.5)}
@@ -66,6 +71,7 @@ export const Technologies = () => {
                         animate="animate"
                         className="rounded-2xl border-4 border-neutral-800 p-4">
                         <BiLogoTypescript className="text-7xl text-blue-500 " />
+                        <h1>TypeScript</h1>
                     </motion.div>
                     <motion.div
                         variants={iconVariant(3)}
@@ -73,6 +79,7 @@ export const Technologies = () => {
                         animate="animate"
                         className="rounded-2xl border-4 border-neutral-800 p-4">
                         <BiLogoPostgresql className="text-7xl text-sky-700 " />
+                        <h1>Postgresql</h1>
                     </motion.div>
                     <motion.div
                         variants={iconVariant(2.5)}
@@ -80,6 +87,7 @@ export const Technologies = () => {
                         animate="animate"
                         className="rounded-2xl border-4 border-neutral-800 p-4">
                         <RiTailwindCssFill className="text-7xl text-cyan-400 " />
+                        <h1>TailwindCss</h1>
                     </motion.div>
                     <motion.div
                         variants={iconVariant(2.5)}
@@ -87,6 +95,7 @@ export const Technologies = () => {
                         animate="animate"
                         className="rounded-2xl border-4 border-neutral-800 p-4">
                         <IoLogoCss3 className="text-7xl text-blue-600 " />
+                        <h1>Css</h1>
                     </motion.div>
                 </div>
             </div>

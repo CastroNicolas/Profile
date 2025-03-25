@@ -37,14 +37,14 @@ export const Service = () => {
     return (
         <motion.div
             ref={ref}
-            className="text-white text-center py-16 px-4 sm:px-8 lg:px-16"
+            className="text-white text-center py-16 px-2 sm:px-6 lg:px-16"
             variants={containerVariants}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
         >
-            <div className="container mx-auto px-8 md:px-16 lg:px-24">
+            <div className="container mx-auto px-8 md:px-8 lg:px-15">
                 <motion.div
-                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                    className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8"
                     variants={containerVariants}
                 >
                     {services.map((service) => (
@@ -56,7 +56,7 @@ export const Service = () => {
                             whileHover={{ scale: 1.05 }}
                         >
                             <div
-                                className="text-right text-2xl font-bold text-transparent bg-clip-text text-gray-200"
+                                className="text-right text-2xl font-bold text-transparent bg-clip-text text-gray-100"
                             >
                                 {service.date}
                             </div>

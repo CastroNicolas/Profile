@@ -46,7 +46,7 @@ export const AboutMe = () => {
                     <motion.img
                         src={AboutMePicture}
                         alt='AboutMePicture'
-                        className="w-40 h-60 sm:w-72 sm:h-62 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-2xl object-cover max-w-full "
+                        className="w-40 h-60 sm:w-72 sm:h-62 md:w-80 md:h-80 lg:w-30 lg:h-96 rounded-2xl object-cover max-w-full "
                         initial={{ scale: 0.8, opacity: 0 }}
                         animate={controls}
                     />
@@ -59,7 +59,7 @@ export const AboutMe = () => {
                         <p className="text-base mb-6 sm:mb-8">
                             I'm a Fullstack Developer with experience working in different projects with the following stack of technologies: Javascript, Typescript, React.js, Redux, Node.js, SQL, Express, and MongoDB. Additionally, I have hands-on experience with third-party authentications, utilizing platforms such as Firebase and Auth0, as well as implementing JWT (JSON Web Tokens). I consider myself a problem-solving, team player, and results-oriented person. I'm looking for new challenges in the Industry where I can bring value to the team and to the company in order to achieve the company's objectives.
                         </p>
-                        <div className="grid grid-cols-3 sm:grid-cols-3 gap-6 mt-12">
+                        <div className="grid grid-cols-3 sm:grid-cols-3 gap-6 mt-2">
                             <motion.div
                                 initial={{ opacity: 0, scale: 0.9 }}
                                 animate={controls}

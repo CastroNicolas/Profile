@@ -6,7 +6,7 @@ export default {
     extend: {
       extend: {
         fontFamily: {
-          sans: ["Inter", "sans-serif"],
+          sans: ["Lato", "sans-serif"],
         },
       },
     },

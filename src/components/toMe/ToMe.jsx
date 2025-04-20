@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import scroll from "../../assets/imgStyles/scroll.png";
+import scroll from "../../../public/imgStyles/scroll.png";
 import NicolásCastro from '../../assets/NicolasCastro.pdf';
 import ProfilePicture from '../../assets/ProfilePicture.jpeg';
 import './toMe.scss';

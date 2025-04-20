@@ -14,6 +14,8 @@ const titles = {
     "services": "My experience",
     "technologies": "What do I use??",
 };
+
+const showMoon = ["about-me", "services"];
 // eslint-disable-next-line react/prop-types
 export const Parallax = ({ type }) => {
     const ref = useRef();
@@ -42,8 +44,7 @@ export const Parallax = ({ type }) => {
                 className="planets"
                 style={{
                     y: yBg,
-                    // backgroundImage: `url(${type === "about-me" ? "/moon.png" : "/sun.png"
-                    // })`,
+                    backgroundImage: `url(${showMoon.includes(type) ? "/src/assets/imgStyles/planets.png" : "/src/assets/imgStyles/sun.png"})`,
                 }}
             ></motion.div>
             <motion.div style={{ x: yBg }} className="stars"></motion.div>

@@ -4,7 +4,7 @@
       "id": 9,
       "name": "DEV TREE",
       "technologies": "React.js, Node.js, Express, SQL, CSS",
-      "image": "/src/assets/DevTree.png",
+      "image": "/DevTree.png",
       "github": "https://github.com/CastroNicolas/devTreeFront",
       "deploy": "https://devtree-nico.netlify.app/",
       "description": "A comprehensive social network platform designed specifically for developers. Features include user authentication, profile customization, post creation with code snippets support, real-time commenting, and a follow system. Built with a robust tech stack focusing on performance and user experience."
@@ -13,7 +13,7 @@
       "id": 1,
       "name": "Pet Palace",
       "technologies": "Vite.js, Node, Express, SQL, Tailwind",
-      "image": "/src/assets/PetPalace.jpeg",
+      "image": "/PetPalace.jpeg",
       "github": "https://github.com/PetPalacePF/petpalace",
       "deploy": "https://petpalace-lilac.vercel.app/",
       "description": "A comprehensive e-commerce platform for pet supplies and accessories. Features include product catalog with advanced filtering, shopping cart functionality, secure payment processing, user reviews, and order tracking. Built with modern technologies to provide a seamless shopping experience for pet owners."
@@ -22,7 +22,7 @@
       "id": 3,
       "name": "Calendary",
       "technologies": "MERN, SASS",
-      "image": "/src/assets/Calendary.png",
+      "image": "/Calendary.png",
       "github": "https://github.com/CastroNicolas/calendar-app",
       "deploy": "https://castronicolas.github.io/calendar-app/",
       "description": "A dynamic calendar application built with the MERN stack. Features include event creation and management, drag-and-drop functionality, customizable views, and event reminders. Enhanced with SASS for a polished and responsive design."
@@ -32,7 +32,7 @@
       "id": 6,
       "name": "Gif App",
       "technologies": "React.js, Bootstrap, CSS",
-      "image": "/src/assets/GifApp.png",
+      "image": "/GifApp.png",
       "github": "https://github.com/CastroNicolas/react-GifApp",
       "deploy": "https://castronicolas.github.io/react-GifApp/",
       "description": "A dynamic GIF search engine utilizing the Giphy API. Features include instant search results, trending GIFs section, copy-to-clipboard functionality, and infinite scroll. Styled with Bootstrap for a modern and responsive interface."
@@ -41,7 +41,7 @@
       "id": 7,
       "name": "To Do App",
       "technologies": "React.js, Bootstrap, CSS",
-      "image": "/src/assets/ToDoApp.png",
+      "image": "/ToDoApp.png",
       "github": "https://castronicolas.github.io/TodoApp/",
       "deploy": "https://castronicolas.github.io/react-tarea-app/",
       "description": "A feature-rich task management application built with React. Includes task categorization, priority settings, due dates, local storage persistence. Designed for maximum productivity and ease of use."
@@ -50,7 +50,7 @@
       "id": 5,
       "name": "Countries App",
       "technologies": "Vite.js, Node, Express, SQL, Tailwind",
-      "image": "/src/assets/CountriesApp.png",
+      "image": "/CountriesApp.png",
       "github": "https://github.com/CastroNicolas/CountriesApp",
       "deploy": "",
       "description": "An interactive web application providing detailed information about countries worldwide. Features include advanced filtering, search functionality, detailed country statistics, and interactive maps. Built with a modern tech stack for optimal performance."
@@ -59,7 +59,7 @@
       "id": 8,
       "name": "Rick and Morty App",
       "technologies": "React.js, Node.js, Express, SQL, CSS",
-      "image": "/src/assets/RyM.png",
+      "image": "/RyM.png",
       "github": "https://github.com/CastroNicolas/RickAndMortyApp",
       "deploy": "",
       "description": "An interactive Rick and Morty character explorer utilizing the official API. Features include character search, filtering by status and species, detailed character profiles, and favorite character saving functionality. Built with a full-stack approach for enhanced user experience."
